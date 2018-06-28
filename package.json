@@ -35,7 +35,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "heroku-postbuild": "SET NODE_ENV=production && yarn build"
+    "heroku-postbuild": "cross-env NODE_ENV=production && yarn build"
   },
   "proxy": "http://localhost:3001/",
   "engines": {
