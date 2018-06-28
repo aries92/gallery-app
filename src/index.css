@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.uploadBox {
+    width: 100%;
+    height: 100%;
+    background: #e0e0e0;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid transparent;
+}
+
+.uploadBoxActive {
+    background: rgba(224, 224, 224, 0.6);
+    border: 3px solid transparent;
+}
+
+.uploadBoxAccept {
+    border: 3px solid #c3e6cb
+}
+
+.uploadBoxReject {
+    border: 3px solid #f5c6cb
+}
+
+.deleteIcon {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+    border-radius: 1000px;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.GalleryGridItem:hover .deleteIcon {
+    display: flex;
+    cursor: pointer;
+}
+
+.clearInput {
+    background: none;
+    border: 0;
+    outline: none;
+    color: #ffffff;
+}
